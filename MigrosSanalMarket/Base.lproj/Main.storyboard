@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b6h-VI-oVW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Anasayfa-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Anasayfa" customModule="MigrosSanalMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Ürün,yemek veya hizmet ara" translatesAutoresizingMaskIntoConstraints="NO" id="5a2-AO-3K8">
+                                <rect key="frame" x="0.0" y="257" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="b6t-Hw-krr"/>
+                                </connections>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JfP-FS-3JR">
+                                <rect key="frame" x="0.0" y="313" width="414" height="500"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GPm-tE-Hji">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hucre" id="tIp-Fq-Hy5" customClass="CollectionViewCell" customModule="MigrosSanalMarket" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IYM-fA-KmZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hemen" translatesAutoresizingMaskIntoConstraints="NO" id="A0U-WC-pPr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="Qpe-N4-8Ko"/>
+                                                        <constraint firstAttribute="width" constant="150" id="cm9-cq-2Qc"/>
+                                                        <constraint firstAttribute="height" constant="150" id="sod-yp-fBI"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="A0U-WC-pPr" firstAttribute="centerX" secondItem="IYM-fA-KmZ" secondAttribute="centerX" id="mfB-9G-9nu"/>
+                                                <constraint firstItem="A0U-WC-pPr" firstAttribute="centerY" secondItem="IYM-fA-KmZ" secondAttribute="centerY" id="rIm-PT-xgE"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="A0U-WC-pPr" id="ZkV-UJ-M0Q"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PxW-Ok-Z4L">
+                                <rect key="frame" x="0.0" y="83" width="414" height="174"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XTz-KJ-nSf">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kampanyaHucre" id="UsB-Uk-UQM" customClass="KampanyaHucre" customModule="MigrosSanalMarket" customModuleProvider="target">
+                                        <rect key="frame" x="-18" y="0.0" width="450" height="204"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="epY-NG-0Rx">
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="204"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kampanya" translatesAutoresizingMaskIntoConstraints="NO" id="yJX-eM-fIZ">
+                                                    <rect key="frame" x="0.0" y="8" width="450" height="196"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="yJX-eM-fIZ" secondAttribute="trailing" id="6pd-qm-rth"/>
+                                                <constraint firstItem="yJX-eM-fIZ" firstAttribute="leading" secondItem="epY-NG-0Rx" secondAttribute="leading" id="PPG-1N-9dr"/>
+                                                <constraint firstItem="yJX-eM-fIZ" firstAttribute="leading" secondItem="epY-NG-0Rx" secondAttribute="leading" id="PlJ-32-onN"/>
+                                                <constraint firstAttribute="trailing" secondItem="yJX-eM-fIZ" secondAttribute="trailing" id="VH8-ts-DUP"/>
+                                                <constraint firstAttribute="bottom" secondItem="yJX-eM-fIZ" secondAttribute="bottom" id="ePb-LW-e1l"/>
+                                                <constraint firstItem="yJX-eM-fIZ" firstAttribute="top" secondItem="epY-NG-0Rx" secondAttribute="top" constant="8" id="kBJ-aM-tex"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="kampanyaImage" destination="yJX-eM-fIZ" id="WKQ-yP-iVr"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PxW-Ok-Z4L" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="01G-gX-ulC"/>
+                            <constraint firstItem="5a2-AO-3K8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1W2-er-B1D"/>
+                            <constraint firstItem="PxW-Ok-Z4L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Ld-4z-cwM"/>
+                            <constraint firstItem="PxW-Ok-Z4L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6jm-rL-urp"/>
+                            <constraint firstItem="5a2-AO-3K8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6yK-N7-yWs"/>
+                            <constraint firstItem="PxW-Ok-Z4L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="83" id="9lo-Eh-aHH"/>
+                            <constraint firstItem="JfP-FS-3JR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AbS-0P-JUT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JfP-FS-3JR" secondAttribute="bottom" id="EjA-5G-bhi"/>
+                            <constraint firstItem="5a2-AO-3K8" firstAttribute="top" secondItem="PxW-Ok-Z4L" secondAttribute="bottom" id="LFr-Oc-zWU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5a2-AO-3K8" secondAttribute="bottom" constant="500" id="fvW-HP-Bh1"/>
+                            <constraint firstItem="JfP-FS-3JR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jkW-uk-Cnq"/>
+                            <constraint firstItem="JfP-FS-3JR" firstAttribute="top" secondItem="5a2-AO-3K8" secondAttribute="bottom" id="xqO-VP-jhg"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="I8v-Zm-8Nw"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="JfP-FS-3JR" id="nk3-HO-gJg"/>
+                        <outlet property="kampanyaCollectionView" destination="PxW-Ok-Z4L" id="Oh8-pn-YBV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.60869565217399" y="-2.6785714285714284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vso-jU-QtN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b6h-VI-oVW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cjN-Yh-ttD">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Kag-FA-iAH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="clq-PG-d0g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hemen" width="512" height="512"/>
+        <image name="kampanya" width="450" height="196"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
