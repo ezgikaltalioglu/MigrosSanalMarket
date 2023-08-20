@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Ürün,yemek veya hizmet ara" translatesAutoresizingMaskIntoConstraints="NO" id="5a2-AO-3K8">
+                            <searchBar contentMode="redraw" ambiguous="YES" placeholder="Ürün,yemek veya hizmet ara" translatesAutoresizingMaskIntoConstraints="NO" id="5a2-AO-3K8">
                                 <rect key="frame" x="0.0" y="257" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -61,57 +61,27 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PxW-Ok-Z4L">
-                                <rect key="frame" x="0.0" y="83" width="414" height="174"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XTz-KJ-nSf">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kampanyaHucre" id="UsB-Uk-UQM" customClass="KampanyaHucre" customModule="MigrosSanalMarket" customModuleProvider="target">
-                                        <rect key="frame" x="-18" y="0.0" width="450" height="204"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="epY-NG-0Rx">
-                                            <rect key="frame" x="0.0" y="0.0" width="450" height="204"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kampanya" translatesAutoresizingMaskIntoConstraints="NO" id="yJX-eM-fIZ">
-                                                    <rect key="frame" x="0.0" y="8" width="450" height="196"/>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="yJX-eM-fIZ" secondAttribute="trailing" id="6pd-qm-rth"/>
-                                                <constraint firstItem="yJX-eM-fIZ" firstAttribute="leading" secondItem="epY-NG-0Rx" secondAttribute="leading" id="PPG-1N-9dr"/>
-                                                <constraint firstItem="yJX-eM-fIZ" firstAttribute="leading" secondItem="epY-NG-0Rx" secondAttribute="leading" id="PlJ-32-onN"/>
-                                                <constraint firstAttribute="trailing" secondItem="yJX-eM-fIZ" secondAttribute="trailing" id="VH8-ts-DUP"/>
-                                                <constraint firstAttribute="bottom" secondItem="yJX-eM-fIZ" secondAttribute="bottom" id="ePb-LW-e1l"/>
-                                                <constraint firstItem="yJX-eM-fIZ" firstAttribute="top" secondItem="epY-NG-0Rx" secondAttribute="top" constant="8" id="kBJ-aM-tex"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <connections>
-                                            <outlet property="kampanyaImage" destination="yJX-eM-fIZ" id="WKQ-yP-iVr"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="kampanya2" translatesAutoresizingMaskIntoConstraints="NO" id="UZb-hC-enP">
+                                <rect key="frame" x="0.0" y="92" width="414" height="165"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PxW-Ok-Z4L" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="01G-gX-ulC"/>
+                            <constraint firstItem="UZb-hC-enP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0co-ZA-0Gj"/>
                             <constraint firstItem="5a2-AO-3K8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1W2-er-B1D"/>
-                            <constraint firstItem="PxW-Ok-Z4L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Ld-4z-cwM"/>
-                            <constraint firstItem="PxW-Ok-Z4L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6jm-rL-urp"/>
+                            <constraint firstItem="UZb-hC-enP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3u3-7e-xW0"/>
                             <constraint firstItem="5a2-AO-3K8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6yK-N7-yWs"/>
-                            <constraint firstItem="PxW-Ok-Z4L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="83" id="9lo-Eh-aHH"/>
                             <constraint firstItem="JfP-FS-3JR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AbS-0P-JUT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JfP-FS-3JR" secondAttribute="bottom" id="EjA-5G-bhi"/>
-                            <constraint firstItem="5a2-AO-3K8" firstAttribute="top" secondItem="PxW-Ok-Z4L" secondAttribute="bottom" id="LFr-Oc-zWU"/>
+                            <constraint firstItem="UZb-hC-enP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IJ0-G1-tJc"/>
+                            <constraint firstItem="5a2-AO-3K8" firstAttribute="top" secondItem="UZb-hC-enP" secondAttribute="bottom" id="eCJ-or-ifX"/>
+                            <constraint firstItem="5a2-AO-3K8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="esO-Zw-z3P"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5a2-AO-3K8" secondAttribute="bottom" constant="500" id="fvW-HP-Bh1"/>
                             <constraint firstItem="JfP-FS-3JR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jkW-uk-Cnq"/>
+                            <constraint firstItem="5a2-AO-3K8" firstAttribute="top" secondItem="UZb-hC-enP" secondAttribute="bottom" id="l0U-61-Onv"/>
+                            <constraint firstItem="UZb-hC-enP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rdy-Hj-9lE"/>
+                            <constraint firstItem="5a2-AO-3K8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xpw-UB-liK"/>
                             <constraint firstItem="JfP-FS-3JR" firstAttribute="top" secondItem="5a2-AO-3K8" secondAttribute="bottom" id="xqO-VP-jhg"/>
                         </constraints>
                     </view>
@@ -120,7 +90,6 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="JfP-FS-3JR" id="nk3-HO-gJg"/>
-                        <outlet property="kampanyaCollectionView" destination="PxW-Ok-Z4L" id="Oh8-pn-YBV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -148,7 +117,7 @@
     </scenes>
     <resources>
         <image name="hemen" width="512" height="512"/>
-        <image name="kampanya" width="450" height="196"/>
+        <image name="kampanya2" width="450" height="196"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

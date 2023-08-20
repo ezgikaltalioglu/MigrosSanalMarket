@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		F46418CA2A901EF300EBF32D /* Resim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46418C92A901EF300EBF32D /* Resim.swift */; };
 		F46418DC2A902C0900EBF32D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46418DB2A902C0900EBF32D /* CollectionViewCell.swift */; };
-		F46418DE2A903DC700EBF32D /* KampanyaHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46418DD2A903DC700EBF32D /* KampanyaHucre.swift */; };
-		F46418E02A903FEC00EBF32D /* Kampanya.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46418DF2A903FEC00EBF32D /* Kampanya.swift */; };
 		F4B672382A8EE56D004E3D1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B672372A8EE56D004E3D1E /* AppDelegate.swift */; };
 		F4B6723A2A8EE56D004E3D1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B672392A8EE56D004E3D1E /* SceneDelegate.swift */; };
 		F4B6723C2A8EE56D004E3D1E /* Anasayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6723B2A8EE56D004E3D1E /* Anasayfa.swift */; };
@@ -22,8 +20,6 @@
 /* Begin PBXFileReference section */
 		F46418C92A901EF300EBF32D /* Resim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resim.swift; sourceTree = "<group>"; };
 		F46418DB2A902C0900EBF32D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		F46418DD2A903DC700EBF32D /* KampanyaHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KampanyaHucre.swift; sourceTree = "<group>"; };
-		F46418DF2A903FEC00EBF32D /* Kampanya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kampanya.swift; sourceTree = "<group>"; };
 		F4B672342A8EE56D004E3D1E /* MigrosSanalMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MigrosSanalMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B672372A8EE56D004E3D1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B672392A8EE56D004E3D1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				F46418DB2A902C0900EBF32D /* CollectionViewCell.swift */,
-				F46418DD2A903DC700EBF32D /* KampanyaHucre.swift */,
 			);
 			path = tableView;
 			sourceTree = "<group>";
@@ -83,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				F46418C92A901EF300EBF32D /* Resim.swift */,
-				F46418DF2A903FEC00EBF32D /* Kampanya.swift */,
 			);
 			path = entitiy;
 			sourceTree = "<group>";
@@ -191,8 +185,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F46418DC2A902C0900EBF32D /* CollectionViewCell.swift in Sources */,
-				F46418DE2A903DC700EBF32D /* KampanyaHucre.swift in Sources */,
-				F46418E02A903FEC00EBF32D /* Kampanya.swift in Sources */,
 				F4B6723C2A8EE56D004E3D1E /* Anasayfa.swift in Sources */,
 				F46418CA2A901EF300EBF32D /* Resim.swift in Sources */,
 				F4B672382A8EE56D004E3D1E /* AppDelegate.swift in Sources */,

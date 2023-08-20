@@ -10,10 +10,8 @@ import UIKit
 class Anasayfa: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var kampanyaCollectionView: UICollectionView!
     
     var resimListesi = [Resim]()
-    var kampanyaListesi = [Kampanya]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,19 +37,13 @@ class Anasayfa: UIViewController {
         resimListesi.append(r5)
         resimListesi.append(r6)
         
-        let k1 = Kampanya(kampanya: "kampanya", id: 1)
-        kampanyaListesi.append(k1)
-
-        
-        
-        
         let tasarim = UICollectionViewFlowLayout()
-        tasarim.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        tasarim.minimumInteritemSpacing = 10
-        tasarim.minimumLineSpacing = 10
+        tasarim.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        tasarim.minimumInteritemSpacing = 5
+        tasarim.minimumLineSpacing = 5
         
         let erkangenislik = UIScreen.main.bounds.width
-        let itemGenislik = (erkangenislik-30)/2
+        let itemGenislik = (erkangenislik-20)/2
         
         tasarim.itemSize = CGSize(width: itemGenislik, height: itemGenislik)
         
